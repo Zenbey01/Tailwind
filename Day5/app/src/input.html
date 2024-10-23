@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Input Form</title>
+</head>
+
+<body class="bg-gradient-to-tr from-rose-400 to-sky-300 text-black w-screen h-screen">
+
+    <!-- <div>
+        This is my input
+    </div> -->
+
+    <div class="w-screen h-screen flex flex-col justify-center items-center gap-4">
+
+        <div class="flex flex-col gap-2">
+            <label class="font-bold" for="">
+                <i class="fa-solid fa-user mr-2 text-[20px] text-violet-700"></i>User</label>
+            <input placeholder="Enter your name"
+            class="w-[400px] py-2 rounded-md px-4 border-2 border-green-500 text-black
+            focus:outline-none focus:border-indigo-800 hover:border-indigo-500" 
+            type="text">
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <label class="font-bold" for="">
+                <i class="fa-solid fa-key mr-2 text-[20px] text-violet-700"></i>Password</label>
+            <div class="relative">
+                <input placeholder="Enter your password"
+                class="w-[400px] py-2 rounded-md px-10 border-2 border-green-500 text-black
+                focus:outline-none focus:border-indigo-800 hover:border-indigo-500" type="password">
+                <i class="fa-duotone fa-solid fa-lock absolute top-3 left-4 text-gray-500 text-[20px]"></i>
+            </div>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <label class="font-bold" for="">
+                <i class="fa-solid fa-phone mr-2 text-[20px] text-violet-700"></i>Phone number</label>
+            <input placeholder="Enter your phone number"
+            class="w-[400px] py-2 rounded-md px-4 border-2 border-green-500 text-black
+            focus:outline-none focus:border-indigo-800 hover:border-indigo-500" type="number">
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <label class="font-bold" for="">
+                <i class="fa-solid fa-envelope mr-2 text-[20px] text-violet-700"></i>Email</label>
+            <input placeholder="Enter your email"
+            class="w-[400px] py-2 rounded-md px-4 border-2 border-green-500 text-black
+            focus:outline-none focus:border-indigo-800 hover:border-indigo-500" type="email">
+        </div>
+
+        <div class="flex flex-col gap-2 items-start">
+            <label class="font-bold" for="">Select your menu</label>
+            <select class="w-[400px] py-2 rounded-md px-4 " name="" id="">
+                <option value="" selected>Choose a menu</option>
+                <option value="">Milk</option>
+                <option value="" disabled>French Fries</option>
+                <option value="">Fly egg</option>
+                <option value="">Hamburger</option>
+            </select>
+        </div>
+
+
+        <!-- <div class="flex flex-col gap-2">
+            <input class="py-2 px-4 text-black border-2 border-black rounded-lg cursor-pointer "
+            type="submit">
+        </div> -->
+        
+        <!-- [0px_4px_20px_0px_rgba(34,17,94,0.5)]
+        ตัวที่หนึ่ง คือ ขยับแกน x
+        ตัวที่สอง คือ ขยับแกน y
+        ตัวที่สาม คือ ขนาดของความฟุ้งของเงา
+        ตัวที่สี่ คือ ความเข้มของเงา
+        ส่วนที่ห้า คือ เลือกสีของเงา ได้ทั้ง rgba(34,17,94,0.5) และ _green  -->
+        
+        <div class="flex  mt-2">
+            <button class="py-2 px-4 text-black border-2 border-black rounded-lg cursor-pointer
+            shadow-[0px_4px_20px_0px_rgba(34,17,94,0.5)]">Submit</button>
+        </div>
+
+        <div class="flex  mt-2">
+            <button class="py-2 px-4 text-black border-b-4 border-violet-900 rounded-lg 
+            shadow-[0px_4px_10px_0px_black] hover:shadow-[0px_4px_10px_0px_violet] transition-all duration-300">cancel</button>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
